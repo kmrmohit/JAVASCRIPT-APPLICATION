@@ -3,7 +3,7 @@ const mybutton = document.getElementById('mybutton');
 var textinput = document.getElementById('mytextinput');
 
 
-//myheading.addEventListener('click',() => {myheading.style.color= 'red';});
+
 var mygameslist = [
   {
     "title": "LittleBigPlanet PS Vita",
@@ -22513,7 +22513,8 @@ for(let i=0;i<errornotpurple.length;i++)
 function getRandomColor() {
   var letters = '0123456789ABCDEF';
   var color = '#';
-  for (var i = 0; i < 6; i++) {
+  for (var i = 0; i < 6; i++) 
+  {
     color += letters[Math.floor(Math.random() * 16)];
   }
   return color;
@@ -22533,7 +22534,7 @@ mybutton.addEventListener('click',() =>
 	var res = document.getElementById('div1');
 	res.innerHTML="";
 	var orderedlist = document.createElement("ol");
-    for(var i=0;i<mygameslist.length;i++)
+    	for(var i=0;i<mygameslist.length;i++)
 	{
 		
 		if(getsearchtype === 'title'){
@@ -22548,7 +22549,7 @@ mybutton.addEventListener('click',() =>
 			var node4 = document.createTextNode("Game Genre: " + String(mygameslist[i].genre));
 			var breake = document.createElement("br");
 			para.appendChild(node);
-		    list.appendChild(para);
+		    	list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node2);
 			list.appendChild(para);
@@ -22558,11 +22559,9 @@ mybutton.addEventListener('click',() =>
 			para = document.createElement("p");
 			para.appendChild(node4);
 			list.appendChild(para);
-			//list.style.color = getRandomColor();
 			list.style.backgroundColor = getRandomColor();	
-            orderedlist.appendChild(list);
+            		orderedlist.appendChild(list);
 			orderedlist.appendChild(breake);
-		   // res.appendChild(node);
 		}
 		}
 		else if(getsearchtype == 'platform')
@@ -22578,7 +22577,7 @@ mybutton.addEventListener('click',() =>
 			var node4 = document.createTextNode("Game Genre: " + String(mygameslist[i].genre));
 			var breake = document.createElement("br");
 			para.appendChild(node);
-		    list.appendChild(para);
+		    	list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node2);
 			list.appendChild(para);
@@ -22588,11 +22587,9 @@ mybutton.addEventListener('click',() =>
 			para = document.createElement("p");
 			para.appendChild(node4);
 			list.appendChild(para);
-			//list.style.color = getRandomColor();
 			list.style.backgroundColor = getRandomColor();	
-            orderedlist.appendChild(list);
+            		orderedlist.appendChild(list);
 			orderedlist.appendChild(breake);
-		   // res.appendChild(node);
 		}			
 		}
 		else if(getsearchtype == 'release year')
@@ -22608,7 +22605,7 @@ mybutton.addEventListener('click',() =>
 			var node4 = document.createTextNode("Game Genre: " + String(mygameslist[i].genre));
 			var breake = document.createElement("br");
 			para.appendChild(node);
-		    list.appendChild(para);
+		    	list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node2);
 			list.appendChild(para);
@@ -22617,12 +22614,10 @@ mybutton.addEventListener('click',() =>
 			list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node4);
-			list.appendChild(para);		
-           //list.style.color = getRandomColor();	
-list.style.backgroundColor = getRandomColor();			   
-            orderedlist.appendChild(list);
+			list.appendChild(para);			
+			list.style.backgroundColor = getRandomColor();			   
+            		orderedlist.appendChild(list);
 			orderedlist.appendChild(breake);
-		   // res.appendChild(node);
 		}			
 		}
 		else if(getsearchtype == 'votes')
@@ -22639,7 +22634,7 @@ list.style.backgroundColor = getRandomColor();
 			var node4 = document.createTextNode("Votes: " + String(mygameslist[i].score));
 			var breake = document.createElement("br");
 			para.appendChild(node);
-		    list.appendChild(para);
+		    	list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node2);
 			list.appendChild(para);
@@ -22649,11 +22644,9 @@ list.style.backgroundColor = getRandomColor();
 			para = document.createElement("p");
 			para.appendChild(node4);
 			list.appendChild(para);
-			//list.style.color = getRandomColor();	
-            list.style.backgroundColor = getRandomColor();			
-            orderedlist.appendChild(list);
+            		list.style.backgroundColor = getRandomColor();			
+            		orderedlist.appendChild(list);
 			orderedlist.appendChild(breake);
-		   // res.appendChild(node);
 		}			
 		}
 		else if(getsearchtype == 'genre')
@@ -22669,7 +22662,7 @@ list.style.backgroundColor = getRandomColor();
 			var node4 = document.createTextNode("Game Genre: " + String(mygameslist[i].genre));
 			var breake = document.createElement("br");
 			para.appendChild(node);
-		    list.appendChild(para);
+		    	list.appendChild(para);
 			para = document.createElement("p");
 			para.appendChild(node2);
 			list.appendChild(para);
@@ -22679,22 +22672,18 @@ list.style.backgroundColor = getRandomColor();
 			para = document.createElement("p");
 			para.appendChild(node4);
 			list.appendChild(para);
-			//list.style.color = getRandomColor();
 			list.style.backgroundColor = getRandomColor();	
-            orderedlist.appendChild(list);
+                        orderedlist.appendChild(list);
 			orderedlist.appendChild(breake);
-		   // res.appendChild(node);
 		}			
 		}		
 	}
 	if(cnt>0)
 	{
 		var breake = document.createElement("br");
-		
 		res.appendChild(breake);
 		var para = document.createElement("h3");
-		
-	    var node = document.createTextNode("SEARCH RESULTS:-");
+		var node = document.createTextNode("SEARCH RESULTS:-");
 		para.style.backgroundColor = "red";
 		para.appendChild(node);
 		res.appendChild(para);
